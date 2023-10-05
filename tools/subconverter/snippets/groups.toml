@@ -11,6 +11,13 @@ url = "http://www.gstatic.com/generate_204"
 interval = 300
 
 [[custom_groups]]
+name = "Japan"
+type = "select"
+rule = [
+    "日本"
+]
+
+[[custom_groups]]
 name = "🎥 NETFLIX"
 type = "select"
 rule = [
