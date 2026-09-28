@@ -3,6 +3,10 @@ group = "🎯 全球直连"
 ruleset = "rules/LocalAreaNetwork.list"
 
 [[rulesets]]
+group = "Custom"
+ruleset = "rules/custom.list"
+
+[[rulesets]]
 group = "Ⓜ️ 微软服务"
 ruleset = "rules/MSServices.list"
 
@@ -25,6 +29,14 @@ ruleset = "rules/DivineEngine/Surge/Ruleset/StreamingMedia/Video/Netflix.list"
 [[rulesets]]
 group = "Japan"
 ruleset = "rules/DivineEngine/Surge/Ruleset/StreamingMedia/Region/JP.list"
+
+[[rulesets]]
+group = "Goodreads"
+ruleset = "rules/goodreads.list"
+
+[[rulesets]]
+group = "K2S"
+ruleset = "rules/k2s.list"
 
 [[rulesets]]
 group = "🌍 国外媒体"

@@ -11,10 +11,34 @@ url = "http://www.gstatic.com/generate_204"
 interval = 300
 
 [[custom_groups]]
+name = "Custom"
+type = "select"
+rule = [
+    "日本"
+]
+
+[[custom_groups]]
 name = "Japan"
 type = "select"
 rule = [
     "日本"
+]
+
+[[custom_groups]]
+name = "Goodreads"
+type = "select"
+rule = [
+    "史诗.*IP"
+]
+
+[[custom_groups]]
+name = "K2S"
+type = "select"
+rule = [
+    "[]🔰 节点选择",
+    "[]🎯 全球直连",
+    "[]♻️ 自动选择",
+    ".*"
 ]
 
 [[custom_groups]]

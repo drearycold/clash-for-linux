@@ -1,0 +1,18 @@
+---
+services:
+  clash:
+    image: ghcr.io/dreamacro/clash
+    restart: always
+    volumes:
+      - /opt/srv/clash-for-linux/conf/config_docker.yaml:/root/.config/clash/config.yaml:ro
+      - /opt/srv/clash-for-linux/dashboard/public:/ui:ro # dashboard volume
+    ports:
+      - "7890:7890"
+      - "7891:7891"
+      - "9090:9090" # The External Controller (RESTful API)
+    network_mode: "bridge"
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
